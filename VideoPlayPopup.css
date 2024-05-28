@@ -1,0 +1,28 @@
+.video-img,
+.video-play-popup {
+  position: relative;
+  overflow: hidden;
+}
+.video-img {
+  width: 860px;
+  height: 560px;
+  flex-shrink: 0;
+}
+.video-play-popup {
+  border-radius: 8px;
+  background-color: var(--primary-contrast);
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 90%;
+  max-height: 90%;
+}
+@media screen and (max-width: 960px) {
+  .video-play-popup {
+    display: flex;
+  }
+}

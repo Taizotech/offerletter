@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./ContactUsPage.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="contact-us-page">
+      <div class="header-mobile-number-section1">
+        <button class="header-mobile-number1">
+          <div class="text-mobile-number-divder-line1">
+            <div class="text-mobile-number1">
+              <div class="give-us-a1">
+                For more details Give us a Missed Call
+              </div>
+              <div class="hyphen1">-</div>
+              <div class="mob1">
+                <img
+                  class="missed-call-ic-icon1"
+                  alt=""
+                  src="./public/missed-callic.svg"
+                />
+
+                <!-- <div class="mobile-number1">+91 99994 99994</div> -->
+                <a class="mobile-number1" style="text-decoration: none;" href="tel:044 4011 4148">
+                044 4011 4148
+                </a>
+              </div>
+            </div>
+            <div class="text-mobile-number-divder-line-item"></div>
+          </div>
+        </button>
+      </div>
+      <nav class="header-nav-bar1">
+        <div class="nav-bar-container1">
+          <img
+            class="offerltr-logo-1-icon1"
+            alt=""
+            src="./public/offerltr-logo-1@2x.png"
+            id="offerltrLogo1Image"
+          />
+
+          <div class="nav-bar-links-container1">
+            <div class="nav-bar-links1">
+              <a class="home2" href="/">Home</a>
+              <a class="faqs2" href="./FAQPage.html">FAQs</a>
+              <a class="faqs2" href="./AboutUsPage.html">About Us</a>
+              <a class="contact-us2" href="ContactUsPage.html">Contact Us</a>
+            </div>
+            <button
+              class="menu-alt-01-svgrepo-com-1-11"
+              id="menuAlt01SvgrepoCom11"
+            >
+              <img
+                class="menu-menu-alt-011"
+                alt=""
+                src="./public/menu--menu-alt-01.svg"
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="contact-us-section">
+        <div class="contact-us-heading">
+          <b class="contact-us3">Contact Us</b>
+        </div>
+        <div class="contact-us4">
+          <div class="contact-us-content">
+            <div class="contact-us-send-us-a-message-f">
+              <div class="contact-details">
+                <div class="phone-number-icon">
+                  <img class="phone-icon" alt="" src="./public/phoneicon.svg" />
+
+                  <div class="phone-number">
+                    <div class="phone">Phone</div>
+                    <div class="phone-number1">
+                      <!-- <div class="div1">+91 99994 99994</div> -->
+                      <a class="mobile-number2" style="text-decoration: none;"  href="tel:044 4011 4148">
+                    044 4011 4148
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone-number-icon">
+                  <img class="email-icon" alt="" src="./public/emailicon.svg" />
+
+                  <div class="phone-number">
+                    <div class="phone">Email</div>
+                    <a href="mailto:info@offeltr.com" style="text-decoration: none;" class="infooffeltrcom">info@offeltr.com</a>
+                  </div>
+                </div>
+                <div class="address-detail">
+                  <img
+                    class="location-icon"
+                    alt=""
+                    src="./public/locationicon.svg"
+                  />
+
+                  <div class="phone-number">
+                    <div class="phone">Address</div>
+                    <div class="software-technology-parks">
+                      Software Technology Parks of India, 2nd Floor, No. 5,
+                      Rajiv Gandhi Salai, Taramani, Chennai - 600 113
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-divider-line"></div>
+              <div class="send-us-a-message-form-contain">
+                <div class="form-fields">
+                  <div class="send-us-a">Send us a message</div>
+                  <div class="contact_us_form">
+                   <form onsubmit="return false" id="contactUsForm" name="contact_us_from">
+                    <div class="form-group">
+                      <input name="Name" id="name" class="name-input" type="text" placeholder="Enter your Name" maxlength minlength
+                        required />
+
+
+                        <span class="errorMsg">Please enter your name</span>
+
+                    </div>
+                    
+                   <div class="form-group">
+                    <input name="MobileNumber" id="mobileNumber" class="mobile-number-input" type="number" placeholder="Mobile Number"
+                      maxlength="{10}" minlength="{10}" required />
+                      <span class="errorMsg">Please enter valid mobile number</span>
+                   </div>
+                    
+                    <div class="form-group">
+                      <input name="Email" id="email" class="mobile-number-input" type="email" placeholder="Email" maxlength minlength
+                        required />
+                        <span class="errorMsg email_error">Please enter your email id</span>
+                    </div>
+                    
+                   <div class="form-group">
+                    <textarea name="Message" required id="message" value="" maxlength="100" class="message-input" placeholder="Type message...">
+                                                            </textarea>
+                                                            <span class="errorMsg">Please enter your message</span>
+                   </div>
+                                        <input  type="hidden" name="PostedTime" id="postedTime"  >
+
+                                        <button type="submit" class="send-message-button text-white" style="color: aliceblue;">
+                                          Send Message
+                                        </button>
+                   </form>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer1">
+        <div class="container2">
+          <div class="white-logo-social-icons-div1">
+            <div class="logo-social-icons1">
+              <img
+                class="offerltr-white-logo-11"
+                alt=""
+                src="./public/offerltr-white-logo-11@2x.png"
+              />
+
+              <div class="social-icons1">
+                <a href="https://www.facebook.com/profile.php?id=100094744638828" target="_blank" rel="noopener noreferrer">
+              <img class="facebook-ic-icon1" alt="" src="./public/facebook-ic1.svg" />
+                </a>
+
+                  <a href="https://www.youtube.com/channel/UCFEvv1KREZxOiOjxvIIwMLg" target="_blank" rel="noopener noreferrer">
+                    <img class="facebook-ic-icon" alt="" src="./public/youtube-ic.svg" />
+                  </a>
+                  
+                  <a href="https://www.instagram.com/offerltr_/" target="_blank"><img class="insta-ic-icon1" alt="" src="./public/instaic1.svg" /></a>
+                  <a href="https://www.linkedin.com/company/offerltr/" target="_blank">
+                  <img class="facebook-ic-icon1" alt="" src="./public/linkedin-ic1.svg" />
+                  </a>
+                  
+                  
+                  <a href="https://twitter.com/OfferLtr" target="_blank" rel="noopener noreferrer"><img class="facebook-ic-icon1" alt="" src="./public/twitteric1.svg" /></a>                          
+
+                
+              </div>
+            </div>
+          </div>
+          <div class="divider-line1"></div>
+          <div class="copywright-terms-privacy1">
+            <div class="offerltr-all-rights1">
+              © 2023, OfferLtr. All Rights Reserved.
+            </div>
+            <div class="terms-privacy1">
+              <a href="terms_of_service.html" class="terms-of-service1" target="_blank">Terms of service</a>
+              <div class="offerltr-all-rights1">|</div>
+              <a href="privacy_policy.html" class="privacy-policy1" target="_blank">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileViewMenuPopUp" class="popup-overlay" style="display: none">
+      <div class="mobile-view-menu-pop-up">
+        <div class="menu-list">
+          <a class="home1" href="/">Home</a>
+          <a class="home1" href="./FAQPage.html">FAQs</a>
+          <a class="home1" href="./AboutUsPage.html">About Us</a>
+          <a class="home1" href="ContactUsPage.html">Contact Us</a>
+        </div>
+        <button class="close-md-svgrepo-com-1" id="popupcloseMdSvgrepoCom1">
+          <img
+            class="menu-close-md1"
+            alt=""
+            src="./public/menu--close-md1.svg"
+          />
+        </button>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+      <script  src="./all.js"></script>
+
+    <script>
+      // $(document).ready(function () {
+      //       $('.search-flights-button').click(function () {
+      //     var name = $('.name-input').val();
+      //     var mobileNumber = $('.mobile-number-input').val();
+      //     var email = $('.mobile-number-input[type="email"]').val();
+      //     var message = $('.message-input').val();
+      //     var isValid = true;
+
+      //     // Validate name
+      //     if (name === '') {
+      //       $('.name-input').next('.error').remove();
+      //       $('.name-input').after('<span class="error">Please enter your name</span>');
+      //       isValid = false;
+      //     } else {
+      //       $('.name-input').next('.error').remove();
+      //     }
+
+      //     // Validate mobile number
+      //     if (mobileNumber === '') {
+      //       $('.mobile-number-input').next('.error').remove();
+      //       $('.mobile-number-input').after('<span class="error">Please enter your mobile number</span>');
+      //       isValid = false;
+      //     } else if (!/^\d{10}$/.test(mobileNumber)) {
+      //       $('.mobile-number-input').next('.error').remove();
+      //       $('.mobile-number-input').after('<span class="error">Please enter a valid 10-digit mobile number</span>');
+      //       isValid = false;
+      //     } else {
+      //       $('.mobile-number-input').next('.error').remove();
+      //     }
+
+      //     // Validate email
+      //     if (email === '') {
+      //       $('.mobile-number-input[type="email"]').next('.error').remove();
+      //       $('.mobile-number-input[type="email"]').after('<span class="error">Please enter your email</span>');
+      //       isValid = false;
+      //     } else if (!/\S+@\S+\.\S+/.test(email)) {
+      //       $('.mobile-number-input[type="email"]').next('.error').remove();
+      //       $('.mobile-number-input[type="email"]').after('<span class="error">Please enter a valid email address</span>');
+      //       isValid = false;
+      //     } else {
+      //       $('.mobile-number-input[type="email"]').next('.error').remove();
+      //     }
+
+      //     // Validate message
+      //     if (message === '') {
+      //       $('.message-input').next('.error').remove();
+      //       $('.message-input').after('<span class="error">Please enter your message</span>');
+      //       isValid = false;
+      //     } else {
+      //       $('.message-input').next('.error').remove();
+      //     }
+
+      //     // Submit the form if valid
+      //     if (isValid) {
+      //       // Place your code here to submit the form or perform any other actions
+      //       alert('Form submitted successfully!');
+      //     }
+      //   });
+
+      //   // Remove error messages while typing
+      //   $('.name-input').on('input', function () {
+      //     $(this).next('.error').remove();
+      //   });
+
+      //   $('.mobile-number-input').on('input', function () {
+      //     $(this).next('.error').remove();
+      //   });
+
+      //   $('.mobile-number-input[type="email"]').on('input', function () {
+      //     $(this).next('.error').remove();
+      //   });
+
+      //   $('.message-input').on('input', function () {
+      //     $(this).next('.error').remove();
+      //   });
+      // });
+
+       
+
+      $(document).ready(function () {
+
+         $(document).on("input", "#name", function () {
+          // Get the current value of the input field
+          let inputValue = $(this).val();
+          let onlyAlphabet;
+
+          // Define the regular expression to allow only alphabetic characters and spaces
+          let regex = /^[A-Za-z\s]+$/;
+
+          // Check if the value matches the regex pattern
+          if (!regex.test(inputValue)) {
+            // If not a valid input, replace non-alphabetic characters (excluding spaces) with an empty string
+            inputValue = inputValue.replace(/[^A-Za-z\s]/g, "");
+          }
+
+          // Convert the input value to title case (capitalize first letter of each word)
+          onlyAlphabet = inputValue
+            .toLowerCase()
+            .split(" ")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ")
+
+
+          // Update the input field value with the cleaned and title-cased value
+          $(this).val(onlyAlphabet);
+        });
+
+
+
+        var popupcloseMdSvgrepoCom1 = document.getElementById(
+          "popupcloseMdSvgrepoCom1"
+        );
+        if (popupcloseMdSvgrepoCom1) {
+          popupcloseMdSvgrepoCom1.addEventListener("click", function (e) {
+            var popup = e.currentTarget.parentNode;
+            function isOverlay(node) {
+              return !!(
+                node &&
+                node.classList &&
+                node.classList.contains("popup-overlay")
+              );
+            }
+            while (popup && !isOverlay(popup)) {
+              popup = popup.parentNode;
+            }
+            if (isOverlay(popup)) {
+              popup.style.display = "none";
+            }
+          });
+        }
+
+        var offerltrLogo1Image = document.getElementById("offerltrLogo1Image");
+        if (offerltrLogo1Image) {
+          offerltrLogo1Image.addEventListener("click", function (e) {
+            window.location.href = "/";
+          });
+        }
+
+        var menuAlt01SvgrepoCom11 = document.getElementById("menuAlt01SvgrepoCom11");
+        if (menuAlt01SvgrepoCom11) {
+          menuAlt01SvgrepoCom11.addEventListener("click", function () {
+            var popup = document.getElementById("mobileViewMenuPopUp");
+            if (!popup) return;
+            var popupStyle = popup.style;
+            if (popupStyle) {
+              popupStyle.display = "flex";
+              popupStyle.zIndex = 100;
+              popupStyle.backgroundColor = "rgba(0, 0, 0, 0.7)";
+              popupStyle.alignItems = "center";
+              popupStyle.justifyContent = "center";
+            }
+            popup.setAttribute("closable", "");
+
+            var onClick =
+              popup.onClick ||
+              function (e) {
+                if (e.target === popup && popup.hasAttribute("closable")) {
+                  popupStyle.display = "none";
+                }
+              };
+            popup.addEventListener("click", onClick);
+          });
+        }
+
+
+
+        $('#message').val("");
+
+        let noError=0;
+
+
+
+        // email validation
+        function ValidateForm() {      
+         
+          noError = 0;
+
+          if ($("#name").val() == "") {
+            $("#name").parents(".form-group").addClass("error");
+            noError++;
+          } else {
+            $("#name").parents(".form-group").removeClass("error");
+          }
+
+         
+
+            // Validate message
+          if ($("#message").val() == "") {
+            // alert("hii")
+          $("#message").parents(".form-group").addClass("error");     
+                
+           noError++;
+          } else {
+            // alert("helo")
+            console.log($("#message").val())
+             $("#message").parents(".form-group").removeClass("error");
+          } 
+          
+          
+          //     // Validate mobile number
+          var mobileNumber=$("#mobileNumber").val()
+          if (mobileNumber === '') {
+         noError++
+          $("#mobileNumber").parents(".form-group").addClass("error");
+          } else if (
+            $("#mobileNumber").val().length != 10             
+          )  {
+              noError++
+         $("#mobileNumber").parents(".form-group").addClass("error");         
+          
+          } else {
+           $("#mobileNumber").parents(".form-group").removeClass("error");
+          }
+
+
+
+          if ($("#email").val() == "") {
+            $(".email_error").text("Please enter your email id");
+            $("#email").parents(".form-group").addClass("error");
+            noError++;
+          } else {
+            let emailId = $("#email").val();
+            if (
+              /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+                $("#email").val()
+              )
+            ) {
+              $("#email").parents(".form-group").removeClass("error");
+            } else {
+              $(".email_error").text("Please enter a valid email address");
+              $("#email").parents(".form-group").addClass("error");
+              noError++;
+              // alert("You have entered an invalid email address!");
+            }
+          }
+          console.log(noError)
+        }
+
+        const send_contact_form = (e) => {
+          ValidateForm();       
+      
+
+          if (noError == 0) {
+           
+            $(".send-message-button").text("Submitting...");
+            //  $(".send-message-button").prop("disabled", true);
+            const scriptURL =
+              "https://script.google.com/macros/s/AKfycbyTojyG8bk_vzaD9bQgg7ZeSsTkijIaLRIq4iIslxfo3ZB1CR_oZpN0vWkzRpVehiXHZA/exec";
+              
+            
+            const form = document.forms["contact_us_from"];
+            // console.log(form);
+            // form.append("Submitted Time", current_time);
+           
+               let current_time = new Date();
+              $("#postedTime").val(current_time);
+              // e.preventDefault();
+              fetch(scriptURL, { method: "POST", body: new FormData(form) }).then((response) => {
+                  console.log(response)
+                  $(".send-message-button ").text("Submitted");
+
+                  setTimeout(() => {
+                    $(".send-message-button").text("Submit");
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#message").val("");
+                    $("#mobileNumber").val("");
+                     $(".send-message-button").prop("disabled", false);
+                  }, 5000);
+                   
+                }).catch((error) => {
+                  $(".send-message-button").text("Submit");
+                    $(".send-message-button").prop("disabled", false);
+                  console.error("Error!", error.message);
+                });
+            
+          } else {
+          }
+        };
+
+        //   const send_contact_form = (e) => {
+        //   ValidateForm();
+
+        //   if (noError == 0) {
+        //     let current_time = new Date();
+        //     $("#postedTime").val(current_time);
+        //     $(".send-message-button").text("Submitting...");
+        //     $(".send-message-button").prop("disabled", true);
+
+        //     const scriptURL =
+        //       "https://script.google.com/macros/s/AKfycbxdoOyLHpJDMWEw6PJL1NtZchJ7fovp-5Gs8Fq5XUCI1za1gbDr88thwkrv8KAG6Nqe/exec";
+
+        //     const form = document.forms["contact_us_from"];
+        //     form.addEventListener("submit", (e) => {
+        //       e.preventDefault();
+
+        //       // jQuery Ajax Call
+        //       $.ajax({
+        //         url: scriptURL,
+        //         type: "POST",
+        //         data: new FormData(form),
+        //         processData: false,
+        //         contentType: false,
+        //         success: function (response) {
+        //           console.log(response);
+        //           $(".send-message-button ").text("Submitted");
+
+        //           setTimeout(() => {
+        //             $(".send-message-button").text("Submit");
+        //             $("#name").val("");
+        //             $("#email").val("");
+        //             $("#message").val("");
+        //             $("#mobileNumber").val("");
+        //             $(".send-message-button").prop("disabled", false);
+        //           }, 5000);
+        //         },
+        //         error: function (error) {
+        //           $(".send-message-button").text("Submit");
+        //           $(".send-message-button").prop("disabled", false);
+        //           console.error("Error!", error.message);
+        //         },
+        //       });
+        //     });
+        //   } else {
+        //   }
+        // };
+
+        $(document).on("click", ".send-message-button", function () {        
+          send_contact_form();
+        });      
+        
+      });
+      </script>
+  </body>
+</html>

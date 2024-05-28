@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./MobileViewMenuPopUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="mobile-view-menu-pop-up">
+      <div class="menu-list">
+        <a class="home1" href="/">Home</a>
+        <a class="home1" href="./FAQPage.html">FAQs</a>
+        <a class="home1" href="./AboutUsPage.html">About Us</a>
+        <a class="home1" href="./ContactUsPage.html">Contact Us</a>
+      </div>
+      <button class="close-md-svgrepo-com-1" id="popupcloseMdSvgrepoCom1">
+        <img class="menu-close-md1" alt="" src="./public/menu--close-md1.svg" />
+      </button>
+    </div>
+
+    <script>
+      var popupcloseMdSvgrepoCom1 = document.getElementById(
+        "popupcloseMdSvgrepoCom1"
+      );
+      if (popupcloseMdSvgrepoCom1) {
+        popupcloseMdSvgrepoCom1.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

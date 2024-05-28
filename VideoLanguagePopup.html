@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./VideoLanguagePopup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="video-language-popup">
+      <div class="container1">
+        <div class="title-audio-ic">
+          <img
+            class="audio-svgrepo-com-1-icon"
+            alt=""
+            src="./public/audiosvgrepocom-1.svg"
+          />
+
+          <a class="select-audio-language" href="/">Select audio language</a>
+        </div>
+        <div class="language-buttons">
+          <button class="english-btn-container">
+            <div class="text-ic">
+              <a class="english" href="/">English</a>
+              <img class="a-icon" alt="" src="./public/a.svg" />
+            </div>
+          </button>
+          <button class="tamil-btn-container">
+            <div class="text-ic1">
+              <a class="a" href="/">தமிழ்</a>
+              <img class="icon" alt="" src="./public/1.svg" />
+            </div>
+          </button>
+          <button class="hind-btn-container">
+            <div class="text-ic2">
+              <a class="a1" href="/">हिन्दी</a>
+              <img class="icon" alt="" src="./public/.svg" />
+            </div>
+          </button>
+        </div>
+      </div>
+      <button class="close-md-svgrepo-com3" id="popupcloseMdSvgrepoCom3">
+        <img class="menu-close-md" alt="" src="./public/menu--close-md.svg" />
+      </button>
+    </div>
+
+    <script>
+      var popupcloseMdSvgrepoCom3 = document.getElementById(
+        "popupcloseMdSvgrepoCom3"
+      );
+      if (popupcloseMdSvgrepoCom3) {
+        popupcloseMdSvgrepoCom3.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
